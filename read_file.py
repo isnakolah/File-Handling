@@ -1,12 +1,6 @@
 file_location = '/home/isnakolah/Desktop/PythonFundamentals/OOP/File-Handling/text.txt'
 
-handle = open(file_location, 'r')
+handle = open(file_location, 'w')
 
-data = handle.read()
-counter = 0
-
-for word in data.split():
-    if word == 'Python':
-        counter += 1
-
-print(counter)
+handle.write('Hello Moringa')
+handle.close()
